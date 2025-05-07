@@ -1,5 +1,5 @@
 import unittest
-from task_manager import Task, TaskManager
+from ..task_manager import Task, TaskManager
 
 class TestTaskManager(unittest.TestCase):
     def setUp(self):

@@ -1,5 +1,5 @@
 import unittest
-from task_manager import Task
+from ..task_manager import Task
 
 class TestTask(unittest.TestCase):
     def test_task_initialization(self):
