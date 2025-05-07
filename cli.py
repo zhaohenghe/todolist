@@ -35,6 +35,9 @@ def main():
         manager.complete_task(args.index)
     elif args.command == 'delete':
         manager.delete_task(args.index)
+    elif args.command == 'help':
+        parser.print_help()
+        return
     else:
         parser.print_help()
         return
