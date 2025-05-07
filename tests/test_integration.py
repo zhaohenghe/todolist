@@ -1,7 +1,7 @@
 import unittest
 import os
 from ..task_manager import TaskManager, Task
-from storage import load_tasks, save_tasks
+from ..storage import load_tasks, save_tasks
 
 class TestIntegration(unittest.TestCase):
     def setUp(self):

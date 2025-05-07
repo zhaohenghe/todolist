@@ -1,7 +1,7 @@
 import unittest
 import os
 import json
-from storage import load_tasks, save_tasks
+from ..storage import load_tasks, save_tasks
 from ..task_manager import Task
 
 class TestStorage(unittest.TestCase):
