@@ -5,12 +5,10 @@ from storage import load_tasks, save_tasks
 
 class TestIntegration(unittest.TestCase):
     def setUp(self):
-
         self.test_file = 'test_tasks.json'
         self.manager = TaskManager()
 
     def tearDown(self):
-
         if os.path.exists(self.test_file):
             os.remove(self.test_file)
 
