@@ -2,7 +2,7 @@ import argparse
 from task_manager import TaskManager
 from storage import load_tasks, save_tasks
 
-TASKS_FILE = 'tasks.json'
+TASKS_FILE = '/app/tasks.json'
 
 def main():
     parser = argparse.ArgumentParser(description='ToDoList CLI App')
