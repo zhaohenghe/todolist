@@ -8,20 +8,17 @@ def main():
     parser = argparse.ArgumentParser(description='ToDoList CLI App')
     subparsers = parser.add_subparsers(dest='command')
 
-    # add task
     add_parser = subparsers.add_parser('add')
     add_parser.add_argument('--title', required=True)
     add_parser.add_argument('--description', required=True)
     add_parser.add_argument('--due', required=True)
 
-    # list tasks
     subparsers.add_parser('list')
 
-    # complete task
     complete_parser = subparsers.add_parser('complete')
     complete_parser.add_argument('--index', type=int, required=True)
 
-    # delete task
+
     delete_parser = subparsers.add_parser('delete')
     delete_parser.add_argument('--index', type=int, required=True)
 
