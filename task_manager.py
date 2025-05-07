@@ -41,7 +41,7 @@ class TaskManager:
             return
 
         for idx, task in enumerate(self.tasks):
-            status = "✔️" if task.completed else "❎"
+            status = "✔️" if task.completed else "❌"
             logging.info(f"[{idx}] {task.title} ({task.due_date}) - {status}")
             logging.info(f"    {task.description}")
 
