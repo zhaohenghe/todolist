@@ -3,7 +3,7 @@
         "title": "update the tasks",
         "description": "update it",
         "due_date": "2023-04-01",
-        "completed": false
+        "completed": true
     },
     {
         "title": "update the tasks",
