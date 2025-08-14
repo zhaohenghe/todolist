@@ -1,14 +1,1 @@
-[
-    {
-        "title": "update task",
-        "description": "update the tasks",
-        "due_date": "2025-04-01",
-        "completed": true
-    },
-    {
-        "title": "Sample Task",
-        "description": "Try the app",
-        "due_date": "2025-04-01",
-        "completed": true
-    }
-]
+[]

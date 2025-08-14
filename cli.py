@@ -1,8 +1,12 @@
 import argparse
+import logging
 from task_manager import TaskManager
 from storage import load_tasks, save_tasks
 
 TASKS_FILE = '/app/tasks.json'
+
+logging.basicConfig(level=logging.INFO, format='%(message)s')
+
 
 def main():
     parser = argparse.ArgumentParser(description='ToDoList CLI App')
@@ -28,7 +32,7 @@ def main():
 
     if args.command == 'add':
         manager.add_task(args.title, args.description, args.due)
-        print(f"Task '{args.title}' added.")
+        logging.info(f"Task '{args.title}' added.")
     elif args.command == 'list':
         manager.list_tasks()
     elif args.command == 'complete':

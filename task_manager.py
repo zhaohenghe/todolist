@@ -1,7 +1,7 @@
 import logging
 from datetime import datetime
 
-logging.basicConfig(level=logging.INFO, format='%(message)s')
+# logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 class Task:
     def __init__(self, title, description, due_date, completed=False):
