@@ -1,7 +1,7 @@
 import logging
 from datetime import datetime
 
-logging.basicConfig(level=logging.INFO, format='%(message)s')
+# logging.basicConfig(level=print, format='%(message)s')
 
 class Task:
     def __init__(self, title, description, due_date, completed=False):
@@ -37,24 +37,24 @@ class TaskManager:
 
     def list_tasks(self):
         if not self.tasks:
-            logging.info("No tasks found.")
+            print("No tasks found.")
             return
 
         for idx, task in enumerate(self.tasks):
             status = "✔️" if task.completed else "❌"
-            logging.info(f"[{idx}] {task.title} ({task.due_date}) - {status}")
-            logging.info(f"    {task.description}")
+            print(f"[{idx}] {task.title} ({task.due_date}) - {status}")
+            print(f"    {task.description}")
 
     def complete_task(self, index):
         try:
             self.tasks[index].completed = True
-            logging.info(f"Marked task '{self.tasks[index].title}' as complete.")
+            print(f"Marked task '{self.tasks[index].title}' as complete.")
         except IndexError:
-            logging.info("Invalid task index.")
+            print("Invalid task index.")
 
     def delete_task(self, index):
         try:
             removed = self.tasks.pop(index)
-            logging.info(f"Deleted task '{removed.title}'.")
+            print(f"Deleted task '{removed.title}'.")
         except IndexError:
-            logging.info("Invalid task index.")
+            print("Invalid task index.")
